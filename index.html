@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>2 Col Portfolio - Start Bootstrap Template</title>
+    <title>Brad O'Farrell's Fullstack Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,144 +20,171 @@
 
   <body>
 
+      <div class="parallax"></div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-faded fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <span class="navbar-brand" href="#"><h1>Brad O'Farrell's Portfolio</h1></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#projects">Projects
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
+    <!-- Projects -->
     <div class="container">
-
-      <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
-      </h1>
-
+      <a name="projects"/> 
+      <br/><br/>
       <div class="row">
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://snake-vs-mongoose.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/snake_logo.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="https://snake-vs-mongoose.herokuapp.com/" target="_blank">Snake vs Mongoose (2017)</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text">I was learning about <a href="http://mongoosejs.com/">Mongoose</a> and I couldn't shake the idea of "Snake (the game) vs Mongoose (the software)" so I made this: A traditional "snake" game where you compete against the ghost data of another player from a previous session. The game logic is all Javascript, and the data is passed from the database using Mongoose, Express, and Handlebars. (<a href="https://github.com/BradOFarrell/snake_vs_mongoose">Github</a>)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+            <div class="card h-100">
+              <a href="http://burnvr360.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/burnvr_logo.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://burnvr360.herokuapp.com/" target="_blank">BurnVR (2017)</a>
+                </h4>
+                <p class="card-text">This is a VR project I made in 3 days using Facebook's <a href="https://facebook.github.io/react-vr/" target="_blank">ReactVR</a> framework. I wanted to experiment with a VR framework so I decided to make an app where you can explore a network of 360 panoramic videos. The footage was shot by me and <a href="https://www.youtube.com/user/indymogul" target="_blank">a crew</a> at Burning Man in 2016; we documented large-scale art installations just hours before they were burned down. (<a href="https://github.com/BradOFarrell/burnvr" target="_blank">Github</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <a href="http://kantokalos.herokuapp.com/" target="_blank"><img class="card-img-top" src="img/pokedex_logo.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="http://kantokalos.herokuapp.com/" target="_blank">React Pokédex (2017)</a>
+              </h4>
+              <p class="card-text">I wanted to practice with React so I made a simple Pokedex app using <a href="https://pokeapi.co/">PokéAPI</a>. You can sign into or create an account (for now there is no authentication) and collect and battle Pokémon. It was really interesting to see how React's setState function interacted with <a href="https://www.npmjs.com/package/axios">Axios</a>'s promises. I also had a lot of fun re-creating the Pokemon battle mechanics in Javascript. (<a href="https://github.com/BradOFarrell/reactpokedex">Github</a>)</p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="http://ai-autopilot-game.herokuapp.com/index.html" target="_blank"><img class="card-img-top" src="img/autopilot_logo.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="http://ai-autopilot-game.herokuapp.com/index.html" target="_blank">Autopilot AI (2016)</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text">This was a prototype I made in Javascript to test out the core mechanics of a game I was designing for a mobile game company. The basic system was hacked together in a weekend, then I would spend a few hours a week updating the game mechanics after design meetings. This was my first attempt using the canvas HTML element, which is used to draw the lasers and explosions. (<a href="https://github.com/BradOFarrell/autopilot_game">Github</a>)</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-
     </div>
-    <!-- /.container -->
 
+    <!-- Resume --> 
+
+    <div class="container">
+        <a name="resume"/> 
+          <div class="jumbotron">
+          <h1>Brad O'Farrell's Resume</h1> 
+          <br/>
+          <p>In 2012 I graduated from SUNY with a <strong>Bachelor’s of Computer Science</strong> while working full-time as a community manager for a startup. Immediately after graduating I launched a <a href="https://www.kickstarter.com/projects/cantripgames/story-war-the-storytelling-party-game" target="_blank">game project on Kickstarter</a> that went viral and raised over $300k in 30 days. I spent the next 2 years fulfilling my project and consulting on other crowdfunding campaigns. Then in 2015 I was hired by NetEase Games where I worked on <a href="http://netease-na.com/eternal-arena" target="_blank">Eternal Arena</a> (MOBA) and <a href="https://play.google.com/store/apps/details?id=com.netease.h2na.android&hl=en" target="_blank">Tome of the Sun</a> (MMO) as a mobile game designer.</p>
+          <p>I was laid off from NetEase on January 2017 due to downsizing. In February I began a 3 month contract at <strong>Facebook</strong> as a lead search ranking analyst through a staffing agency called Pro Unlimited. My job was to write SQL querries that the product team used to measure the accuracy of the search feature. This past August I decided to enroll in <strong>General Assembly</strong>'s 3 month long Web Development Immersive course. Now I'm looking for an entry-level development position where I can continue to grow my skills as a programmer.</p>
+          <br/>
+          <h4>Professional Experience:</h4>
+
+          <strong>Lead Search Ranking Analyst</strong><br/>
+          Facebook through Pro Unlimited, Menlo Park, CA<br/>
+          <em>February 2017 - May 2017 (3 month contract)</em>
+          <ul>
+            <li>Used Facebook’s internal tools to analyze effectiveness of changes to the search product.</li>
+            <li>Used SQL and Jinja to create dashboards that product team could use to track KPIs.</li>
+          </ul>
+
+          <strong>Mobile Game Designer</strong><br/>
+          NetEase Games­, San Francisco, CA <br/>
+          <em>May 2015 - January 2017</em>
+          <ul>
+            <li>Designed characters, quests, and events for <a href="http://netease-na.com/eternal-ana" target="_blank">Eternal Arena</a> (MOBA) and <a href="https://play.google.com/store/apps/details?id=com.netease.h2na.android&hl=en" target="_blank">Tome of the Sun</a> (MMO).</li>
+            <li>Programmed prototype versions of early-stage products, used for playtesting / UX research.</li>
+            <li>Localized story text for several games, worked with vendors for art, translation, and voice acting.</li>
+            <li>Adjusted retention strategies originally designed for asian markets to work in western markets.</li>
+          </ul>
+
+          <strong>Crowdfund Marketing Consultant</strong><br/>
+          Self-Employed, San Francisco, CA<br/>
+          <em>Feb 2013 to April 2015</em>
+          <ul>
+              <li><a href="https://www.kickstarter.com/projects/cantripgames/story-war-the-storytelling-party-game" target="_blank">Story War</a>: Started my own business; raised $360k in 30 days; managed a team of 6 employees.</li> 
+              <li><a href="https://geekdad.com/2014/08/robot-turtles-thinkfun-2/" target="_blank">RobotTurtles</a>: Volunteered as a consultant for a card game that helps teach kids how to code.</li>
+              <li><a href="https://techcrunch.com/2014/10/02/navdy-raises-6-5m-for-its-in-car-heads-up-display-platform/" target="_blank">Navdy</a>: 3 months planning and then 3 months running a pre-order campaign that grossed $6.5M.</li>
+              <li><a href="https://www.reddit.com/r/redditmade/comments/2uj6fu/redditmade_closure_announcement/" target="_blank">RedditMade</a>: Worked with the Reddit product team on a short-lived crowdfunding platform.</li>
+          </ul>
+
+          <strong>Community Manager</strong><br/>
+          Turntable.fm, New York City, NY<br/>
+          <em>February 2012 to February 2013</em>
+          <ul>
+              <li>Handled high volume user feedback (100+ daily emails) and converted it into actionable data.</li>
+              <li>Helped product team prioritize development timeline in response to the needs of the community.</li>    
+              <li>Coded a Javascript module for turntable.fm homepage that helped users coordinate events.</li>
+          </ul>
+          <p><em>You can read <a href="https://www.linkedin.com/in/bradley-o-farrell/" target="_blank">my full employment history</a> on LinkedIn.</em></p>          
+          <h4>Education:</h4>
+          <ul>
+              <li>Web Development Immersive (Full Time), General Assembly, Atlanta, GA, 2017</li>
+              <li>Product Management (Part Time), General Assembly, San Francisco, CA, 2014</li>
+              <li>Bachelor’s of Computer Science, State University Of New York, New York, NY, 2012</li>
+          </ul>
+          <h4>Skills:</h4>
+          <p>Over 15 years of experience with Javascript. I've also completed mid-sized projects in Java, C, PHP, SQL, Node, Express, Ruby, React, and half a dozen Javascript frameworks. I'm also proficient in Photoshop, Final Cut, Excel, AdWords, JIRA, Zendesk, acebook Ads, Google Ads. My past experience in marketing and customer research has also translated well into UX and product design.</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Contact --> 
+
+    <div class="container">
+      <div class="jumbotron" style=" min-height: 500px;">
+          <a name="contact"/>
+          <h1>Contact Me</h1>
+          <div class="container" style="width: 300px; height: 300px; float: right">
+              <div  class="ratio img-responsive img-circle" style="background-image: url(img/brad.jpg);"></div>
+          </div>  
+            <div class="container">
+                <br/>
+                <br/>
+                <h2>Email: <a href="mailto:BradOFarrell@gmail.com">BradOFarrell@gmail.com</a></h2>
+                <br/>
+                <h2>Github: <a href="https://github.com/BradOFarrell">BradOFarrell</a></h2>
+                <br/>
+                <h2>Phone: 347 266 4972</h2>                
+              </div>  
+        </div>
+      </div>
+    </div>
+    
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Brad O'Farrell 2017</p>
       </div>
       <!-- /.container -->
     </footer>
